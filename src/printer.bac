@@ -1,0 +1,28 @@
+#include "adds.h"
+
+void print_linked_list(node **heads)
+{
+
+    node *tmp_prev = NULL;
+    node *tmp = NULL;
+
+    for (uint8_t i = 0; i < MAXTHREAD; i++) {
+
+        tmp = heads[i];
+
+        while(tmp) {
+
+            printf("(%.lf, %.lf)\n",tmp->factor1, tmp->factor2);
+
+            tmp_prev = tmp;
+            tmp = (node*)tmp->next;
+            tmp_prev->next = NULL;
+            memset(tmp_prev,0,sizeof(node));
+            free(tmp_prev);
+
+        }
+    }
+
+    return;
+
+}
