@@ -1,2 +1,2 @@
 # factor
-Repository for the factor program
+Repository for *factor* code
