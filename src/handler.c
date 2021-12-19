@@ -9,7 +9,8 @@ int get_number()
     char val[BUFF];
     int errnu = 0;
 
-    printf(ANSI_COLOR_GREEN "Enter a Number: " ANSI_COLOR_RESET ANSI_COLOR_MAGENTA);
+    printf(ANSI_COLOR_GREEN "Enter a Number: " ANSI_COLOR_RESET
+            ANSI_COLOR_MAGENTA);
 
     if (!fgets(val, BUFF, stdin)) {
         perror("Error");

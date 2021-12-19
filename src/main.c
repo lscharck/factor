@@ -26,7 +26,8 @@ int main(void)
 
     for (uint8_t i = 0; i < MAXTHREAD; i++) {
         index[i] = i+1;
-        if (pthread_create(&threads[i], NULL, factoring, &index[i]) != 0) perror("Error");
+        if (pthread_create(&threads[i], NULL, factoring, &index[i]) != 0)
+            perror("Error");
     }
 
     for (uint8_t i = 0; i < MAXTHREAD; i++) {
@@ -46,7 +47,9 @@ int main(void)
 
     print_tree(root);
 
-    printf(ANSI_COLOR_RESET ANSI_COLOR_RED "CPU Time: %f seconds\nWall Time: %f seconds\n" ANSI_COLOR_RESET, cpu_time, wall_time);
+    printf(ANSI_COLOR_RESET ANSI_COLOR_RED 
+            "CPU Time: %f seconds\nWall Time: %f seconds\n" ANSI_COLOR_RESET,
+            cpu_time, wall_time);
 
     return 0;
 }
