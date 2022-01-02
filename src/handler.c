@@ -1,12 +1,12 @@
 #include "adds.h"
 
-extern double n;
+double n; // defined here
 
 int get_number()
 {
 
-    char *endptr = NULL;
     char val[BUFF];
+    char *endptr = NULL;
     int errnu = 0;
 
     printf(ANSI_COLOR_GREEN "Enter a Number: " ANSI_COLOR_RESET
