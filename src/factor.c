@@ -1,7 +1,5 @@
 #include "adds.h"
 
-extern double n;
-
 void *factoring(void *ind)
 {
 
