@@ -1,7 +1,5 @@
 #include "adds.h"
 
-double n;
-
 int main(void)
 {
 
