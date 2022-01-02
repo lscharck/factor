@@ -21,6 +21,8 @@
 #define true 1
 #define false 0
 
+extern double n; // declared here for all TUs, defined in handler
+
 typedef struct
 {
     double factor1;
