@@ -6,7 +6,8 @@ factor uses multiple threads with linked list to gather factors. These are then 
 Math is **faster** than memory
 
 ### TODO ###
-Create an ADT for the linked list and the binary tree data structures.
+
+#### Create an ADT for the linked list and the binary tree data structures ####
 
 The ADT "should" statments:
 1. There should be two ADTs, one for the ll and the other for the bst
