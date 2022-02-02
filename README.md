@@ -9,8 +9,8 @@ Math is **faster** than memory
 
 #### Create an ADT for the linked list and the binary tree data structures ####
 
-The ADT "should" statments:
-1. There should be two ADTs, one for the ll and the other for the bst
+The ADT functional requirements (shall statments):
+1. There shall be two ADTs, one for the ll and the other for the bst
 2. There are two ideas to implement these ADTs
 3. Firstly, the nodes and data structure are seprate
 	1. Tenativly there should be a ll class, a bst class, and a data
