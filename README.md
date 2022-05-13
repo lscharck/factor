@@ -1,12 +1,11 @@
 # factor
 Repository for the *factor* project
 ## General implementation ##
-factor uses multiple threads with linked list to gather factors. These are then sorted into a binary tree for printing.
-### Remember ###
-Math is **faster** than memory
+Factor uses multiple threads with linked list to gather factors. These are then sorted into a binary tree for printing. Factor may be compiled by using cmake and make in the build directory. Executing "factorc" with the number to be factored as the command line argument will return the factors of that number in a list. Additionally, the cpu time and wall time will be printed out pertaining to just the factoring portion of code.
+
 
 ### TODO ###
-
+Task that would make the code easier to maintain
 #### Create an ADT for the linked list and the binary tree data structures ####
 
 The ADT functional requirements (shall statments):
