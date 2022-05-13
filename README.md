@@ -11,39 +11,39 @@ Task that would make the code easier to maintain
 The ADT functional requirements (shall statments):
 1. There shall be two ADTs, one for the ll and the other for the bst
 2. There are two ideas to implement these ADTs
-3. Firstly, the nodes and data structure are seprate
-	1. Tenativly there should be a ll class, a bst class, and a data
+3. Firstly, the nodes and data structure are separate
+	1. Tentatively there should be a ll class, a bst class, and a data
 	   strucuter class, each instance or object of these classes should be
 	   a node or link in the data structer or the data strucuter itself
-	2. There is a set (object) that represents the data strucuter itself.
+	2. There is a set (object) that represents the data structure itself.
 	   There are two calls to "new", one for a data structer object and
 	   multiple calls for a node object. There is a call to "add" which adds
 	   the node object to the data strucuter object
 	3. Operations must defined for the set such that one can add nodes,
 	   remove nodes, retrive nodes, cycle through all nodes (print all nodes)
-	4. The finner details remain to be layout such as how is a node
+	4. The finer details remain to be layout such as how is a node
 	   represented? How is a data strucuter object represented? How are the
 	   ll, bst, and data strucuter objects seperated from one another? How
 	   are node objects added to the data strucuter set? How are operations
 	   such as cycle implemented?
-3. Secondly, the data strucuter is internal to the nodes themselfs
+3. Secondly, the data structure is internal to the nodes themself
 	1. This idea allows for the nodes to be created and automatically added
 	   the respective data strucuter
-	2. The data strucuters are located inside the TU or dot c file that
+	2. The data structures are located inside the TU or dot c file that
 	   implements the node. Thus, the ll class has a file for the class
 	   specific operations that house a local data structuer for the ll. The
 	   same is true for the bst data strucuter
 	3. Operations must defined for the set such that one can add nodes,
 	   remove nodes, retrive nodes, cycle through all nodes (print all nodes)
-	4. The finner details remain to be layout such as how is a node
+	4. The finer details remain to be layout such as how is a node
 	   represented? How are the ll and bst objects seperated from one 
 	   another? How are node objects added to the data strucuter set? 
 	   How are operations such as cycle implemented?
-4. Note that a set is not neccessarily a data structer as it too is an object
+4. Note that a set is not necessarily a data structure as it too is an object
 that can represent anything. A set is just an object that holds, contains
-referencs to, or points to objects that are members of that set. In some cases
-a set has no refernce to its objects as the objects themselfs contain references
-to the set that contains them. However, it may be convient to represent the data
-structer as a set as it contains objects like a set does. But this is not strict
-as the definiton of a set is more abstract. The choice to make the data
-strucuter a set has not been decided yet
+references to, or points to objects that are members of that set. In some cases
+a set has no reference to its objects as the objects themself contain references
+to the set that contains them. However, it may be convenient to represent the data
+structure as a set as it contains objects like a set does. But this is not strict
+as the definition of a set is more abstract. The choice to make the data
+structure a set has not been decided yet
